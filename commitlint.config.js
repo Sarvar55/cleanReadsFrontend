@@ -20,6 +20,7 @@ module.exports = {
       2,
       'always',
       [
+        
         'build',
         'chore',
         'ci',
