@@ -5,11 +5,11 @@
   },
   "rules": {
     "no-unused-vars": [1, { "args": "after-used", "argsIgnorePattern": "^_" }],
-    "camelcase": ["error", {"properties": "always"}],
+    "camelcase": ["error", { "properties": "always" }],
     "semi": "error",
     "no-undef": "error",
-    "no-duplicate-imports":"error",
-    "func-style":["error","expression"],
-    "func-names":"error"
+    "no-duplicate-imports": "error",
+    "func-style": ["error", "expression"],
+    "func-names": "error"
   }
 }

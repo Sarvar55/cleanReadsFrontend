@@ -1,11 +1,10 @@
 {
     "name": "cleanreadsproject",
-    "description": "A tutorial and template for creating a production-ready fullstack Next.js application",
+    "description": "",
     "license": "MIT",
     "homepage": "YOUR_GIT_REPO_URL",
     "engines": {
         "node": ">=14.0.0",
-        "yarn": ">=1.22.0",
         "npm": "please-use-yarn"
     },
     "version": "0.1.0",
@@ -14,7 +13,9 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "lint": "next lint"
+        "lint": "next lint",
+        "prettier": "prettier --write .",
+        "prepare": "husky install"
     },
     "dependencies": {
         "eslint": "8.35.0",
@@ -24,6 +25,6 @@
         "react-dom": "18.2.0"
     },
     "devDependencies": {
-        "prettier": "^2.8.4"
+        "husky": "^8.0.3"
     }
 }
