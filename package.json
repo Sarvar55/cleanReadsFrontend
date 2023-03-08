@@ -1,18 +1,26 @@
 {
-  "name": "cleanreadsproject",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "eslint": "8.35.0",
-    "eslint-config-next": "13.2.3",
-    "next": "13.2.3",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
-  }
+    "name": "cleanreadsproject",
+    "description": "A tutorial and template for creating a production-ready fullstack Next.js application",
+    "license": "MIT",
+    "homepage": "YOUR_GIT_REPO_URL",
+    "engines": {
+        "node": ">=14.0.0",
+        "yarn": ">=1.22.0",
+        "npm": "please-use-yarn"
+    },
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "eslint": "8.35.0",
+        "eslint-config-next": "13.2.3",
+        "next": "13.2.3",
+        "react": "18.2.0",
+        "react-dom": "18.2.0"
+    }
 }
