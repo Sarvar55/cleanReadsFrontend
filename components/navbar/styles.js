@@ -1,5 +1,5 @@
 export const styles = {
-  wrapper: 'flex justify-center gap-10 p-5 bg-[#FCC017]',
+  wrapper: 'flex justify-center gap-10 p-5',
   logoContainer: 'flex items-center flex-start',
   content: 'max-w-7xl flex-1 flex justify-between gap-10',
   logo: 'cursor-pointer object-contain',

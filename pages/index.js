@@ -1,16 +1,21 @@
 import Banner from '@/components/banner/Banner';
 import Header from '@/components/navbar/Header';
-import Profilecard from '@/components/profile-card/Profilecard';
-const userDetail = {
-  username: 'Sarvar55',
-  image: null,
-};
+import PostCard from '@/components/PostCard/PostCard';
+import Trenduser from '@/components/trend/Trenduser';
+
 export default function Home() {
   return (
     <>
       <Header />
-      <Banner />
-      <Profilecard userDetail={userDetail} />{' '}
+      <Banner /> {/*  */}{' '}
+      <div className="container mt-3">
+        <Trenduser />
+        <div className="flex mt-4 flex-col gap-4 border-y border-black">
+          <PostCard />
+          <PostCard />
+          <PostCard />
+        </div>{' '}
+      </div>{' '}
     </>
   );
 }
