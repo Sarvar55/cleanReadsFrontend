@@ -7,13 +7,8 @@ const Header = () => {
   const [nav, setNav] = useState(false);
 
   const changeBackground = () => {
-    console.log(window.scrollY);
-    if (window.scrollY >= 22) {
-      setNav(true);
-    } else {
-      setNav(false);
-    }
-    console.log('merhaba');
+    if (window.scrollY >= 22) setNav(true);
+    else setNav(false);
   };
 
   useEffect(() => {
@@ -25,8 +20,8 @@ const Header = () => {
     };
   }, []);
 
-  let color = !nav ? 'bg-[#FCC017]' : '';
-  let wrapper = `flex justify-center gap-10 p-5 transition ${color}`;
+  let color = !nav ? 'bg-[#FCC017]' : 'bg-white';
+  let wrapper = `flex justify-center gap-10 p-5 transition sticky top-0 z-50 ${color}`;
 
   return (
     <div className={wrapper}>
