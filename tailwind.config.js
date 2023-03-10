@@ -1,3 +1,4 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -43,6 +44,7 @@ module.exports = {
       ],
       mediumSerifItalic: ['CharterItalic'],
       mediumSerif: ['Charter'],
+      heebo: ['Heebo', 'sans-serif'],
     },
     extend: {},
     container: {
