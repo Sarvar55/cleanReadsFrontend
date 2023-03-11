@@ -45,8 +45,14 @@ module.exports = {
       mediumSerifItalic: ['CharterItalic'],
       mediumSerif: ['Charter'],
       heebo: ['Heebo', 'sans-serif'],
+      Helvetica: ['Helvetica Neue', 'sans-serif'],
     },
-    extend: {},
+    extend: {
+      colors: {
+        trend: 'rgba(41, 41, 41, 1)',
+        brefing: 'rgba(117, 117, 117, 1)',
+      },
+    },
     container: {
       center: true,
       padding: {
