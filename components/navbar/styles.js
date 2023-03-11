@@ -4,5 +4,6 @@ export const styles = {
   content: 'max-w-7xl flex-1 flex justify-between gap-10',
   logo: 'cursor-pointer object-contain',
   bannerNav: 'flex cursor-pointer items-center space-x-5',
-  accentedButton: 'bg-black text-white py-2 px-4 rounded-full',
+  accentedButton:
+    'bg-black text-white py-2 px-4 rounded-full hover:bg-green-700 transition ease-in ',
 };

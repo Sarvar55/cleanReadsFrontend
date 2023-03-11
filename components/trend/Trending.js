@@ -41,22 +41,14 @@ const trendUsers = [
   },
 ];
 
-const user = {
-  username: 'Sarvar55',
-  image: null,
-  postName: 'Ukraine War, 7 March 2023',
-  time: '5dk',
-  date: 'Mart',
-};
-
 const styles = {
-  wrapper: 'w-[942px] h-[365px] pt-[2.5rem] pb-[1rem]',
+  wrapper: 'w-[942px] h-auto pt-[2.5rem] pb-[1rem]',
   title: '',
 };
 
-export const Trending = () => {
+export const Trending = (props) => {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} {...props}>
       <div className="content w-full">
         <div
           className={
@@ -74,7 +66,7 @@ export const Trending = () => {
             </span>{' '}
           </p>{' '}
         </div>{' '}
-        <div className="posts grid grid-cols-3 gap-3  ">
+        <div className="posts grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3">
           {' '}
           {trendUsers.map((user, index) => {
             const { postName, time } = user;
