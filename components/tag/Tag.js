@@ -51,7 +51,7 @@ const Tag = (props) => {
             <>
               <div
                 key={index}
-                className="tag w-fit h-[33px] flex items-center px-[6px] py-[16px] mr-[8px] mb-[8px] border-edgecolor border text-brefing text-sm font-normal rounded-sm"
+                className="tag w-fit h-[33px] flex items-center px-[6px] py-[16px] mr-[8px] mb-[8px] border-edgecolor border text-brefing text-sm font-normal rounded-sm cursor-pointer"
               >
                 {' '}
                 {name}{' '}
