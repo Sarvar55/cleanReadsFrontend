@@ -51,6 +51,7 @@ module.exports = {
       colors: {
         trend: 'rgba(41, 41, 41, 1)',
         brefing: 'rgba(117, 117, 117, 1)',
+        edgecolor: 'rgba(230, 230, 230, 1)',
       },
     },
     container: {
