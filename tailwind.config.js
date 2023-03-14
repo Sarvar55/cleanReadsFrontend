@@ -46,6 +46,8 @@ module.exports = {
       mediumSerif: ['Charter'],
       heebo: ['Heebo', 'sans-serif'],
       Helvetica: ['Helvetica Neue', 'sans-serif'],
+      Segoe: ['Segoe UI', 'sans-serif'],
+      roboto: ['Roboto', 'sans-serif'],
     },
     extend: {
       colors: {
@@ -65,5 +67,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/line-clamp')],
 };
