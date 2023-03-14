@@ -1,6 +1,6 @@
 import PostCard from './PostCard';
 //burada hıalama sorunu var padding den dolayı
-const PostList = (props) => {
+const PostList = () => {
   return (
     <div className="flex flex-col gap-8">
       <PostCard />

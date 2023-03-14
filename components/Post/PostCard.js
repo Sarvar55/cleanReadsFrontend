@@ -7,7 +7,7 @@ const userDetail = {
   username: 'Sarvar55',
   image: null,
 };
-const PostCard = (props) => {
+const PostCard = () => {
   return (
     <div className="wrapper w-full h-auto flex justify-between items-center">
       <div className="left">
