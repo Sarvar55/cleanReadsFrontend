@@ -45,7 +45,7 @@ module.exports = {
       mediumSerifItalic: ['CharterItalic'],
       mediumSerif: ['Charter'],
       heebo: ['Heebo', 'sans-serif'],
-      Helvetica: ['Helvetica Neue', 'sans-serif'],
+      Helvetica: ['Helvetica Neue', 'sans-serif', 'Helvetica', 'Arial'],
       Segoe: ['Segoe UI', 'sans-serif'],
       roboto: ['Roboto', 'sans-serif'],
     },

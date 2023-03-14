@@ -3,8 +3,24 @@ import Navbar from '@/components/navbar/Navbar';
 import PostList from '@/components/Post/PostList';
 import Tag from '@/components/tag/Tag';
 import { Trending } from '@/components/trend/Trending';
+import { useEffect, useState } from 'react';
 
 export const PublicLayout = () => {
+  const [fixed, setFixed] = useState(false);
+
+  const scrollHandle = () => {
+    if (window.scrollY >= 888) setFixed(true);
+    else setFixed(false);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', scrollHandle);
+
+    return () => {
+      window.removeEventListener('scroll', scrollHandle);
+    };
+  }, []);
+
   return (
     <div>
       <Navbar />
@@ -15,8 +31,10 @@ export const PublicLayout = () => {
           <div className="left md:w-[45%] w-full md:order-1 order-2">
             <PostList />
           </div>{' '}
-          <div className="right md:w-[30%] w-full md:order-2 order-1">
-            <Tag />
+          <div className="right relative md:w-[30%] w-full md:order-2 order-1">
+            <div className={fixed ? 'md:fixed z-50 md:top-[15%]' : ''}>
+              <Tag />
+            </div>{' '}
           </div>{' '}
         </div>{' '}
       </div>{' '}

@@ -6,7 +6,15 @@ const trendUsers = [
   {
     username: 'Sarvar55',
     image: null,
-    postName: 'Why I Will Never Use Alpine Linux Ever Again',
+    postName:
+      'A step-by-step guide to building a chatbot based on your own documents with GPT',
+    time: 'Mar 9· 4 min read',
+  },
+  {
+    username: 'Sarvar55',
+    image: null,
+    postName:
+      'A step-by-step guide to building a chatbot based on your own documents with GPT',
     time: 'Mar 9· 4 min read',
   },
   {
@@ -24,13 +32,8 @@ const trendUsers = [
   {
     username: 'Sarvar55',
     image: null,
-    postName: 'Demotivating a (Skilled) Programmer',
-    time: 'Mar 9· 4 min read',
-  },
-  {
-    username: 'Sarvar55',
-    image: null,
-    postName: 'Demotivating a (Skilled) Programmer',
+    postName:
+      'A step-by-step guide to building a chatbot based on your own documents with GPT',
     time: 'Mar 9· 4 min read',
   },
   {
@@ -41,18 +44,12 @@ const trendUsers = [
   },
 ];
 
-const styles = {
-  wrapper: 'w-[942px] h-auto pt-[2.5rem] pb-[1rem]',
-  title: '',
-};
-
 export const Trending = (props) => {
   return (
-    <div className={styles.wrapper} {...props}>
-      <div className="content w-full">
+    <div className={'w-full h-auto pt-[2.5rem] pb-[1rem]'} {...props}>
+      <div className="content w-[80%] mx-auto">
         <div
           className={
-            styles.title +
             'font-Helvetica flex h-[1.9rem] leading-4 items-center mb-[1rem] flex-row'
           }
         >
@@ -60,13 +57,13 @@ export const Trending = (props) => {
           <p className="flex space-x-3 items-center">
             {' '}
             <Image src={Logo} alt="resim" width={28} height={29} />{' '}
-            <span className="text-trend font-Helvetica font-extrabold">
+            <span className="text-trend font-Helvetica font-semibold">
               {' '}
               Trending on Medium{' '}
             </span>{' '}
           </p>{' '}
         </div>{' '}
-        <div className="posts grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3">
+        <div className="posts grid w-full lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3">
           {' '}
           {trendUsers.map((user, index) => {
             const { postName, time } = user;
@@ -79,9 +76,9 @@ export const Trending = (props) => {
                       <TrendIndex index={index} />{' '}
                     </span>{' '}
                   </div>{' '}
-                  <div className="right flex w-full flex-col mt-3 gap-2">
+                  <div className="right flex  w-full flex-col mt-3 gap-2">
                     <Profilecard userDetail={user} />{' '}
-                    <div className="post-name text-ellipsis overflow-hidden text-trend ont-Helvetica font-extrabold">
+                    <div className="post-name w-full line-clamp-2 overflow-hidden text-trend ont-Helvetica font-Helvetica font-semibold">
                       {' '}
                       {postName}{' '}
                     </div>{' '}
@@ -96,6 +93,7 @@ export const Trending = (props) => {
           })}{' '}
         </div>{' '}
       </div>{' '}
+      <hr className="" />
     </div>
   );
 };

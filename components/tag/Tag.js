@@ -2,63 +2,60 @@ const tags = [
   {
     name: 'Programing',
   },
+
   {
-    name: 'Programing',
+    name: 'Data Science',
   },
   {
-    name: 'Programing',
+    name: 'Technology',
   },
   {
-    name: 'Prog',
+    name: 'Self Improvement',
   },
   {
-    name: 'Prog',
+    name: 'Relationships',
   },
   {
-    name: 'self improvment',
+    name: 'Writing',
   },
   {
-    name: 'self improvment',
+    name: 'Machine Learning',
   },
   {
-    name: 'Phyton',
+    name: 'Politics',
   },
   {
-    name: 'Java',
-  },
-  {
-    name: 'Data sience',
-  },
-  {
-    name: 'self improvment',
+    name: 'Productivity',
   },
 ];
 
-const Tag = (props) => {
+const Tag = () => {
   return (
-    <div className="w-[18rem] h-[16.8rem] pb-[1.5rem]" {...props}>
-      <div className="title leading-4">
-        <h2 className="font-Helvetica mb-3 font-semibold tracking-normal text-trend">
+    <div className={'wrapper md:w-[400px] w-full h-auto'}>
+      <div className="content flex flex-col gap-4">
+        <div className="title">
+          <h2 className="font-Helvetica mb-3 font-semibold tracking-normal line-clamp-2 text-trend">
+            {' '}
+            Discover more of what matters to you{' '}
+          </h2>{' '}
+        </div>{' '}
+        <div className="tags w-full flex flex-wrap">
           {' '}
-          Discover more of what matters to you{' '}
-        </h2>{' '}
-      </div>{' '}
-      <div className="content flex justify-between flex-wrap">
-        {' '}
-        {tags.map((tag, index) => {
-          const { name } = tag;
-          return (
-            <>
-              <div
-                key={index}
-                className="tag w-fit h-[33px] flex items-center px-[6px] py-[16px] mr-[8px] mb-[8px] border-edgecolor border text-brefing text-sm font-normal rounded-sm cursor-pointer "
-              >
-                {' '}
-                {name}{' '}
-              </div>{' '}
-            </>
-          );
-        })}{' '}
+          {tags.map((tag, index) => {
+            const { name } = tag;
+            return (
+              <>
+                <div
+                  key={index}
+                  className="tag h-[33px] flex items-center px-[6px] py-[16px] mr-[8px] mb-[8px] border-edgecolor border text-brefing text-sm font-normal rounded-sm cursor-pointer "
+                >
+                  {' '}
+                  {name}{' '}
+                </div>{' '}
+              </>
+            );
+          })}{' '}
+        </div>{' '}
       </div>{' '}
     </div>
   );

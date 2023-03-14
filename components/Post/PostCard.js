@@ -1,53 +1,42 @@
 import Image from 'next/image';
 import bookmark from '../..//public/images/bookmark.svg';
-import Logo from '../../public/images/medium.png';
+import Logo from '../../public/images/images.jpeg';
 import Profilecard from '../profile-card/Profilecard';
-const styles = {
-  wrapper: 'flex max-w-[46rem] h-[10rem] items-center gap-[1rem]',
-  authorContainer: 'flex gap-[.4rem]',
-  authorImage: 'obkect-cover',
-  authorImageContainer:
-    'grid pleace-items-center rounded-full overflow-hidden h-[1.4rem] w-[1.4rem]',
-  postDetails: 'flex-[2.5rem] flex flex-col',
-  authorName: 'font-semibold',
-  title: 'font-bold text-lg text-ellipsis',
-  brefing: 'text-[#787878]',
-  detailsContainer: 'flex items-center justify-between text-[#787878]',
-  articleDetails: 'my-2 text-[.8rem]',
-  category: 'bg-[#F2F3F2] p-1 rounded-full',
-  bookmarkContainer: 'cursor-pointer',
-};
 
+const userDetail = {
+  username: 'Sarvar55',
+  image: null,
+};
 const PostCard = (props) => {
-  const userDetail = {
-    username: 'Sarvar55',
-    image: null,
-  };
   return (
-    <div className={styles.wrapper} {...props}>
-      <div className={styles.postDetails}>
+    <div className="wrapper w-full h-auto flex justify-between items-center">
+      <div className="left">
         <Profilecard userDetail={userDetail} />{' '}
-        <h1 className={styles.title}>
+        <h2 className="pt-[8px] font-Helvetica font-bold line-clamp-2 max-h-[56px]">
           {' '}
-          I Asked Leading Covid Scientists Off the Record About the Virus s
-          Origins and the{' '}
-        </h1>{' '}
-        <div className={styles.brefing}> Here s what they told me </div>{' '}
-        <div className={styles.detailsContainer}>
-          <span className={styles.articleDetails}>
+          What’ s Going On ? The Silicon Valley Bank Collapse vs.the 2008
+          Financial Crisis{' '}
+        </h2>{' '}
+        <p className="max-h-[40px] cursor-pointer text-sm line-clamp-2 pt-1 font-Helvetica text-brefing text-[#787878]">
+          {' '}
+          Confused ? Here’ s a simple(yet thorough!) explainer.{' '}
+        </p>{' '}
+        <div className={'flex items-center justify-between text-[#787878]'}>
+          <span className={"'my-2 text-[.8rem]"}>
             {' '}
-            Mar 8· 5 min read· <span className={styles.category}>
+            Mar 8· 5 min read·{' '}
+            <span className={'bg-[#F2F3F2] p-1 rounded-full'}>
               {' '}
               Coding{' '}
             </span>{' '}
           </span>{' '}
-          <span className={styles.bookmarkContainer}>
+          <span className={'cursor-pointer'}>
             <Image src={bookmark} alt="bookmark" width={20} height={20} />{' '}
           </span>{' '}
         </div>{' '}
       </div>{' '}
-      <div className={styles.thumbnailContainer}>
-        <Image src={Logo} height={100} width={100} alt="s" />{' '}
+      <div className="right object-contain">
+        <Image src={Logo} height={300} width={300} alt="s" />{' '}
       </div>{' '}
     </div>
   );
