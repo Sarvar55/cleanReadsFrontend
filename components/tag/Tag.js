@@ -31,8 +31,8 @@ const tags = [
 
 const Tag = () => {
   return (
-    <div className={'wrapper md:w-[400px] w-full h-auto'}>
-      <div className="content flex flex-col gap-4">
+    <div className={'wrapper  md:w-[400px] w-full h-auto'}>
+      <div className="content flex flex-col gap-6">
         <div className="title">
           <h2 className="font-Helvetica mb-3 font-semibold tracking-normal line-clamp-2 text-trend">
             {' '}
@@ -56,6 +56,7 @@ const Tag = () => {
             );
           })}{' '}
         </div>{' '}
+        <hr />
       </div>{' '}
     </div>
   );

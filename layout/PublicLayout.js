@@ -1,4 +1,5 @@
 import Banner from '@/components/banner/Banner';
+import Footer from '@/components/footer/Footer';
 import Navbar from '@/components/navbar/Navbar';
 import PostList from '@/components/Post/PostList';
 import Tag from '@/components/tag/Tag';
@@ -31,9 +32,10 @@ export const PublicLayout = () => {
           <div className="left md:w-[45%] w-full md:order-1 order-2">
             <PostList />
           </div>{' '}
-          <div className="right relative md:w-[30%] w-full md:order-2 order-1">
+          <div className="right md:w-[35%] w-full md:order-2 order-1">
             <div className={fixed ? 'md:fixed z-50 md:top-[15%]' : ''}>
               <Tag />
+              <Footer />
             </div>{' '}
           </div>{' '}
         </div>{' '}

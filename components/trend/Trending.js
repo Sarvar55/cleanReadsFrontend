@@ -93,7 +93,7 @@ export const Trending = (props) => {
           })}{' '}
         </div>{' '}
       </div>{' '}
-      <hr className="" />
+      <hr />
     </div>
   );
 };
